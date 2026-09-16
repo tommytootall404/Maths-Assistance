@@ -20,6 +20,6 @@ export const matricesModule: ModuleMeta = {
   shortDescription:
     'What a matrix actually is, how to add, scale and multiply them, and how determinants and inverses let you '
     + 'solve real circuit and structural equations in one step.',
-  accentColor: '#1f8f6e',
+  accentColor: '#c2670f',
   lessonIds: matricesLessons.map((lesson) => lesson.id),
 };

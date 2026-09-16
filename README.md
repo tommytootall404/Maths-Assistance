@@ -9,9 +9,13 @@ for interactive graphs, and [mathjs](https://mathjs.org/) for checking answers.
 
 ## Status
 
-The **Logarithms and Exponentials** module is complete end-to-end (5 lessons, practice engine, progress
-tracking) as a working proof of the approach. Calculus, Vectors, and Matrices modules follow the same data
-format and are added the same way (see below) but aren't written yet.
+All four modules are complete: **Calculus** (8 lessons), **Vectors** (6 lessons), **Matrices and Determinants**
+(5 lessons), and **Logarithms and Exponentials** (5 lessons) — 24 lessons in total, each with the full flow
+(why-this-matters, prerequisite check with refresher, plain-English-then-notation explanation, worked examples,
+randomised practice with tiered hints, summary and key formulas), plus a diagnostic quiz, formula sheet and
+glossary covering all four. Five interactive visuals: a draggable tangent explorer, a fill-in area-under-a-curve
+tool, a draggable vector with live components/magnitude/direction, a step-through matrix-multiplication
+animation, and a capacitor-discharge decay slider.
 
 ## Running locally
 

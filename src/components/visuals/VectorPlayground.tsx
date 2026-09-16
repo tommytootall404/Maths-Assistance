@@ -26,20 +26,22 @@ export function VectorPlayground() {
         Drag the point to move the vector&apos;s tip.
       </p>
 
-      <Mafs height={340} viewBox={{ x: [-AXIS_LIMIT, AXIS_LIMIT], y: [-AXIS_LIMIT, AXIS_LIMIT], padding: 0.5 }}>
-        <Coordinates.Cartesian xAxis={{ axis: true, lines: 1 }} yAxis={{ axis: true, lines: 1 }} />
+      <div style={{ maxWidth: 460, margin: '0 auto' }}>
+        <Mafs height={400} viewBox={{ x: [-AXIS_LIMIT, AXIS_LIMIT], y: [-AXIS_LIMIT, AXIS_LIMIT], padding: 0.5 }}>
+          <Coordinates.Cartesian xAxis={{ axis: true, lines: 1 }} yAxis={{ axis: true, lines: 1 }} />
 
-        {/* Dashed lines to the axes, showing the x and y components */}
-        <Line.Segment point1={[x, 0]} point2={[x, y]} color={COMPONENT_COLOR} weight={1} style="dashed" />
-        <Line.Segment point1={[0, y]} point2={[x, y]} color={COMPONENT_COLOR} weight={1} style="dashed" />
-        <Point x={x} y={0} color={COMPONENT_COLOR} />
-        <Point x={0} y={y} color={COMPONENT_COLOR} />
+          {/* Dashed lines to the axes, showing the x and y components */}
+          <Line.Segment point1={[x, 0]} point2={[x, y]} color={COMPONENT_COLOR} weight={1} style="dashed" />
+          <Line.Segment point1={[0, y]} point2={[x, y]} color={COMPONENT_COLOR} weight={1} style="dashed" />
+          <Point x={x} y={0} color={COMPONENT_COLOR} />
+          <Point x={0} y={y} color={COMPONENT_COLOR} />
 
-        {/* The vector itself, drawn from the origin */}
-        <Line.Segment point1={[0, 0]} point2={[x, y]} color={VECTOR_COLOR} weight={3} />
+          {/* The vector itself, drawn from the origin */}
+          <Line.Segment point1={[0, 0]} point2={[x, y]} color={VECTOR_COLOR} weight={3} />
 
-        {movablePoint.element}
-      </Mafs>
+          {movablePoint.element}
+        </Mafs>
+      </div>
 
       <p className="visual-readout">
         <InlineMath math="\vec v" /> has components <InlineMath math="x \approx" /> {x.toFixed(1)},{' '}
