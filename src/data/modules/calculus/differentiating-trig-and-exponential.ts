@@ -1,5 +1,5 @@
 import type { Lesson } from '../../../types/lesson';
-import { mulberry32, randomInt, randomChoice } from '../../../lib/random';
+import { mulberry32, randomInt } from '../../../lib/random';
 
 export const differentiatingTrigAndExponential: Lesson = {
   id: 'differentiating-trig-and-exponential',

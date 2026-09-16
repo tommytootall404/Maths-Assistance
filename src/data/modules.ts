@@ -1,6 +1,7 @@
 import type { KeyFormula, Lesson, ModuleId } from '../types/lesson';
 import { logsExponentialsModule, logsExponentialsLessons } from './modules/logs-exponentials';
 import { vectorsModule, vectorsLessons } from './modules/vectors';
+import { matricesModule, matricesLessons } from './modules/matrices';
 
 export interface ModuleMeta {
   id: ModuleId;
@@ -13,10 +14,11 @@ export interface ModuleMeta {
 export const modules: ModuleMeta[] = [
   logsExponentialsModule,
   vectorsModule,
-  // calculus and matrices modules are added here as they're built
+  matricesModule,
+  // calculus module is added here once it's built
 ];
 
-export const allLessons: Lesson[] = [...logsExponentialsLessons, ...vectorsLessons];
+export const allLessons: Lesson[] = [...logsExponentialsLessons, ...vectorsLessons, ...matricesLessons];
 
 export function getLessonById(id: string): Lesson | undefined {
   return allLessons.find((lesson) => lesson.id === id);

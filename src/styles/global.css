@@ -478,6 +478,68 @@ input[type='range'] {
   text-align: center;
 }
 
+/* Matrix multiplication visual */
+
+.matrix-multiply {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.matrix-multiply__operand {
+  display: flex;
+  align-items: center;
+}
+
+.matrix-multiply__symbol {
+  font-size: 1.4rem;
+}
+
+.matrix-grid {
+  display: grid;
+  gap: 0.3rem;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: var(--color-surface);
+}
+
+.matrix-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4rem;
+  min-height: 2.4rem;
+  padding: 0.3rem;
+  border-radius: 6px;
+  font-weight: 600;
+  background: var(--color-surface-alt);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.matrix-cell--highlight {
+  background: var(--color-secondary);
+  color: var(--color-primary-dark);
+}
+
+.matrix-cell--current {
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+}
+
+.matrix-multiply__working {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.matrix-multiply__controls {
+  display: flex;
+  justify-content: center;
+}
+
 /* Worked examples */
 
 .worked-example__scenario {
